@@ -9,4 +9,9 @@ df2<-subset(df, select = -c(DENOM) )
 
 df3<-df2 %>% pivot_wider(names_from=PGS,IID,values_from=c(AVG,SUM))
 
-fwrite(df3,"/mnt/scratch/brooke/t2d/T2D_Smith_2024_scores.csv",quote=FALSE,sep=",",row.names=FALSE,col.names=TRUE)
+#fwrite(df3,"/mnt/scratch/brooke/t2d/T2D_Smith_2024_scores.csv",quote=FALSE,sep=",",row.names=FALSE,col.names=TRUE)
+
+fwrite(df3,"/mnt/scratch/brooke/t2d/T2D_Smith_2024_EUR_scores.csv",quote=FALSE,sep=",",row.names=FALSE,col.names=TRUE)
+
+
+
